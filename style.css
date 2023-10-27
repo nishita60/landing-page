@@ -1,0 +1,243 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Segoe UI';
+    background-color: rgb(165, 100, 100);
+}
+
+/* ============= Navbar Styles ============== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 50px;
+}
+
+.navbar-brand{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+    color: rgb(110, 26, 26);
+}
+.navbar-brand span{
+    color: yellow;
+}
+.navbar-menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu-item{
+    margin:0px 10px;
+    padding:5px 10px;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: larger;
+}
+
+.navbar-menu-item:hover{
+    cursor: pointer;
+    background: black;
+    color:rgb(255, 230, 0);
+    border-radius: 10px;
+}
+
+.circle{
+    width:1100px;
+    height:1100px;
+    border-radius: 50%;
+    background: rgb(241, 190, 185);
+    position: absolute;
+    right:-350px;
+    top:-350px;
+    z-index: -1;
+    border:100px solid rgb(255, 238, 83);
+}
+
+/* ============= Banner styles ============= */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.banner-left{
+    width:50%;
+}
+
+.banner-left .title{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 60px;
+}
+.banner-left .title span{
+    color: #fff;
+}
+
+.banner-left .sub-title{
+    font-size: 20px;
+    margin:30px 0px;
+}
+
+.banner-left button{
+    padding:10px 15px;
+    background-color: rgb(255, 230, 0);
+    color:#000;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.banner-left button:hover{
+    background-color: black;
+    color:rgb(255, 230, 0);
+}
+
+.banner-right img{
+    filter: drop-shadow(0px 10px 10px black);
+    width: 80%;
+}
+
+/* =========== Ticker Container Styles ============ */
+
+.ticker-container{
+    margin-top: 200px;
+    width:100%;
+    background-color:rgb(244, 232, 2);
+    padding:40px;
+    color:#6b3333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.ticker-container h2{
+    font-size: 32px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.img-ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 40px;
+
+}
+.img-ticker .cap{
+    width: 400px;
+    padding-left: 5px;
+}
+
+.img-ticker img{
+    width:350px;
+    filter:drop-shadow(5px 5px 5px #000);
+}
+
+/* ============= Delivery Container Styles */
+.delivery-container{
+    background-color:rgb(165, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 0px;
+}
+
+.delivery-left{
+    padding:40px;
+}
+
+.delivery-left h1{
+    font-size: 32px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.delivery-left button{
+    margin-top: 20px;
+    padding:10px 15px;
+    background-color:rgb(244, 232, 2);
+    color:#000;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.delivery-left button:hover{
+    background: #000;
+    color:rgb(149, 225, 255);
+    
+
+}
+
+.deliveryboy{
+    animation: ticker-kf 7s linear infinite;
+    width: 30%;
+    padding-left: 60%;
+}
+
+
+
+/* ========= footer styles ========= */
+.footer{
+    background: rgb(244, 232, 2);
+    padding:50px;
+    padding-bottom: 20px;
+    color:rgb(100, 42, 42);
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer-brand{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.footer-brand .brand{
+    font-size: 15px;
+    text-decoration: none;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons i{
+    font-size: 24px;
+    margin:0px 5px;
+}
+
+.icons i:hover{
+    cursor: pointer;
+}
+
+
+@keyframes ticker-kf {
+    0% {
+          transform: translate3d(0, 0, 0);
+        }
+
+    
+
+    100% {
+          transform: translate3d(-115rem, 0, 0);
+        }
+      }
+ 
